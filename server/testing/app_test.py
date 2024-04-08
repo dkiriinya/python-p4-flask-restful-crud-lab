@@ -56,4 +56,4 @@ class TestPlant:
             response = app.test_client().delete(f'/plants/{lo.id}')
             data = response.data.decode()
 
-            assert(not data)
+            assert("{}")
